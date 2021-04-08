@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <title>Calculadora do Max</title>
+    <script>
+        $(document).ready(()=>{
+            calc = new Calculadora
+        })
+
+    </script>
+</head>
+<body>
+    <div class="container my-4">  
+ 
+        <div class="calculator card">
+        
+            <input type="text" class="display-calc calculator-screen z-depth-1" value="0" disabled />
+        
+            <div class="calculator-keys">
+        
+              <button onclick="calc.addOperator('+')" type="button" class="operator btn btn-info" value="+">+</button>
+              <button onclick="calc.addOperator('-')" type="button" class="operator btn btn-info" value="-">-</button>
+              <button onclick="calc.addOperator('*')" type="button" class="operator btn btn-info" value="*">&times;</button>
+              <button onclick="calc.addOperator('/')" type="button" class="operator btn btn-info" value="/">&divide;</button>
+        
+              <button onclick="calc.addValue('7')" type="button" value="7" class="btn btn-light waves-effect">7</button>
+              <button onclick="calc.addValue('8')" type="button" value="8" class="btn btn-light waves-effect">8</button>
+              <button onclick="calc.addValue('9')" type="button" value="9" class="btn btn-light waves-effect">9</button>
+        
+        
+              <button onclick="calc.addValue('4')" type="button" value="4" class="btn btn-light waves-effect">4</button>
+              <button onclick="calc.addValue('5')" type="button" value="5" class="btn btn-light waves-effect">5</button>
+              <button onclick="calc.addValue('6')" type="button" value="6" class="btn btn-light waves-effect">6</button>
+        
+        
+              <button onclick="calc.addValue('1')" type="button" value="1" class="btn btn-light waves-effect">1</button>
+              <button onclick="calc.addValue('2')" type="button" value="2" class="btn btn-light waves-effect">2</button>
+              <button onclick="calc.addValue('3')" type="button" value="3" class="btn btn-light waves-effect">3</button>
+        
+        
+              <button onclick="calc.addValue('0')" type="button" value="0" class="btn btn-light waves-effect">0</button>
+              <button onclick="calc.addOperator('*')" type="button" class="decimal function btn btn-secondary" value=".">.</button>
+              <button onclick="calc.cls()" type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
+        
+              <button onclick="calc.addOperator('=')" type="button" class="equal-sign operator btn btn-default btn-info " value="=">=</button>
+        
+            </div>
+          </div>
+        </div>
+    
+</body>
+</html>

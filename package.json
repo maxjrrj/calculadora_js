@@ -1,0 +1,19 @@
+{
+  "name": "calculadora2",
+  "version": "1.0.0",
+  "description": "Calculadora em Javascrip e Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxjrrj/calculadora_js.git"
+  },
+  "author": "Max Antonio da Silva Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxjrrj/calculadora_js/issues"
+  },
+  "homepage": "https://github.com/maxjrrj/calculadora_js#readme"
+}
