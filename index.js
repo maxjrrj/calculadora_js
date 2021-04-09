@@ -25,7 +25,7 @@ class Calculadora {
         if (op == '/') {
             this.result = parseInt(v1) / parseInt(v2)
         }
-        if (op == '=') {console.log('vai pro inferno')}
+        if (op == '=') {this.result = this.value2}
         
         this.value1 = this.result
         this.position = 1
@@ -41,6 +41,7 @@ class Calculadora {
         this.operator = ''
         this.result = '0'
         this.show('0')
+        console.log('limpooooou')
     }
     
     addValue(v){
